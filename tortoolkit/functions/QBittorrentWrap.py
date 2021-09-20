@@ -470,7 +470,7 @@ async def get_status(message, all=False):
                 olen += 1
                 msg += "📥 <b>{} | {}% | {}/{}({}) | {} | {} | S:{} | L:{} | {}</b>\n\n".format(
                     i.name,
-                    round(i.progress * 100, 2),
+                    round(i.progress * 100, 10),
                     human_readable_bytes(i.completed),
                     human_readable_bytes(i.size),
                     human_readable_bytes(i.total_size),
