@@ -63,7 +63,7 @@ async def progress_for_pyrogram(
                     for _ in range(10 - math.floor(percentage / 10))
                 ]
             ),
-            round(percentage, 2),
+            round(percentage, 10),
         )
 
         tmp = (
