@@ -48,7 +48,7 @@ async def progress(
                     for i in range(10 - math.floor(percentage / 10))
                 ]
             ),
-            round(percentage, 2),
+            round(percentage, 10),
         )
 
         tmp = progress + "{0} of {1}\nSpeed: {2}/s\nETA: {3}\nUsing engine: Telethon".format(
